@@ -68,11 +68,11 @@ public class MyEvaluator
         }
         if (!string.IsNullOrEmpty(numberBuffer))
         {
-            postfix += numberBuffer + ' ';
+            postfix += numberBuffer + " ";
         }
         while (!stack.IsEmpty)
         {
-            postfix += stack.Pop() + ' ';
+            postfix += stack.Pop() + " ";
         }
         return postfix;
     }
